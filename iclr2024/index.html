@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NeurIPS Workshop.">
+  <meta name="author" content="Satya Narayan Shukla">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <title>Learning from Time Series for Health</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <style>
+      .back {
+        background:
+          linear-gradient(
+            rgba(30, 100, 160, 0.90),
+            rgba(0, 0, 0, 0.01)
+          ),
+          url("img/vienna.jpg") no-repeat center;
+        background-size: cover;
+      }
+      .back h2 {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+      }
+
+      .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+  }
+  </style>
+  <div class="jumbotron jumbotron-fluid back" style="padding-bottom: 100px;">
+    <div class="row header p-6 m-5">
+      <div class="p-1 mx-auto text-center text-white col-md-20 col-sm-12">
+        <h1 style="color:white;">
+          Learning from Time Series for Health
+        </h1>
+        <h2 style="color:white;">
+          Workshop at ICLR 2024
+        </h2>
+        <h3 style="color:white;">
+          Contact: ts4h.chairs@gmail.com
+        </h3>
+        <br>
+        <!-- <a href="#speakers" class="btn" style="font-size:20px; display:inline-block">Invited Speakers</a> -->
+        <!-- <a href="index" class="btn" style="font-size:30px; color:white">Home</a> -->
+        <!-- <a href="call_for_papers" class="btn" style="font-size:30px; color:white">Call for Papers</a> -->
+        <!-- <a href="accepted_papers" class="btn" style="font-size:30px; color:white">Accepted Papers</a> -->
+        <!-- <a href="schedule" class="btn" style="font-size:30px; color:white">Schedule</a> -->
+        <!-- <a href="previous" class="btn" style="font-size:20px; color:white">Previous Workshop: TS4H @ NeurIPS 2022</a> -->
+        <!-- <a href="#organizers" class="btn" style="font-size:20px">Organizers</a> -->
+      </div>
+
+    </div>
+
+  </div>
+  
+  <div class="container">
+
+    <div class="row" style="padding:20px">
+
+       <div class="hidden-xs col-sm-3 col-md-2" id="sidebar" role="navigation" style="margin-top:10px">
+        <!-- <ul class="nav nav-pills nav-stacked">
+          <li><a href="#speakers">Invited Speakers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#papers">Accepted Papers</a></li>
+        </ul> -->
+      </div>
+
+      <div class="col-xs-12 col-sm-9 col-md-9">
+
+        <!-- <div class="row">
+          <h1>Learning from Medical Time Series</h1>
+        </div> -->
+
+        <img src="speakers.png" style="width:78%" align="center">
+        <p></p>
+        <!-- <hr> -->
+
+        <div class="row" style="font-size:18px">
+          <p>
+            Time series data are ubiquitous in healthcare, from medical time series to wearable data,
+            and present an exciting opportunity for machine learning methods to extract actionable
+            insights about human health. However, huge gap remain between the existing time series
+            literature and what is needed to make machine learning systems practical and deployable
+            for healthcare. This is because learning from time series for health is notoriously
+            challenging: labels are often noisy or missing, data can be multimodal and extremely high dimensional,
+            missing values are pervasive, measurements are irregular, data distributions shift rapidly over time,
+            explaining model outcomes is challenging, and deployed models require careful maintenance over time.
+            These challenges introduce interesting research problems that the community has been actively working
+            on for the last few years, with significant room for contribution still remaining. Learning from time series
+            for health is a uniquely challenging and important area with increasing application. Significant advancements
+            are required to realize the societal benefits of these systems for healthcare. This workshop will bring
+            together machine learning researchers dedicated to advancing the field of time series modeling in
+            healthcare to bring these models closer to deployment.
+            </p>
+            <br>
+        </p>
+        </div>
+        
+        <div class="row">
+          <h2><a name="organizers"></a>Call for Papers</h2>
+        In our Time Series for Health Workshop, we delve into the complexities of time series data to better understand and improve human health. This field boasts rich diversity, encompassing various modalities such as wearables, Electronic Health Record (EHR) data, medical time series including ECG, EEG, fMRI, and audio data. Our workshop will pivot around two central themes: Behavioral Health: Exploring the intricate dynamics of behavioral patterns and their implications on health through time series analysis. Foundation Models: Investigating the core models that form the bedrock for understanding and interpreting time series data in healthcare. These themes will be echoed in our keynote addresses, round-tables, and interactive panel discussions. Submissions that align with these themes will be given special consideration for spotlight talks. However, all submissions that meet the guidelines listed below will be considered.
+
+        <p>
+        </p>
+        <b>Submission Guidelines</b>
+        We invite papers that:
+        <ul>
+          <li>Propose innovative methods or perspectives.</li>
+          <li>Present preliminary results that open avenues for future research.</li>
+          <li>Introduce new resources like datasets to propel research in this domain.</li>
+          <li>Clearly demonstrate or discuss their relevance to healthcare, specifically focusing on challenges within health time series data.</li>
+        </ul>
+          
+        <b>Topics of Interest</b>
+        Submissions may address, but are not limited to the follow topics as they relate to time series:
+        <ul>
+          <li>Unsupervised, semi-supervised, and supervised representation learning.</li>
+          <li>Novel architectures or models.</li>
+          <li>Classification, regression, and forecasting.</li>
+          <li>Bayesian models.</li>
+          <li>Sequential decision-making.</li>
+          <li>Challenges of time series data: missing values, noisy/irregular measurements, high-dimensionality.</li>
+          <li>Multi-modal models incorporating time series.</li>
+          <li>Deployment and implementation challenges.</li>
+          <li>Explainability, fairness, and privacy in time series models.</li>
+          <li>Practical applications (e.g., dynamic treatment recommendation for sepsis from EHR time series).</li>
+        </ul>
+          
+        <b>Ethical Considerations</b>
+        We encourage discussions on ethical aspects pertinent to your research. 
+        
+        <b>Submission Instructions</b>
+        We invite extended abstract submissions that are up to 4 pages long (not including references). All accepted papers will be presented in person as posters. There are no formal proceedings generated from this workshop, though all papers will be made public upon their acceptance. Authors are encouraged to make their work publicly available through our online listing of presented work.
+        
+        The reviewing process will be double-blind. Please submit anonymized versions of your paper that include no identifying information about any author identities or affiliations. Submitted papers must be new work that has not yet been published. We allow submissions that are already on arXiv and reviewers will be asked to not seek out public versions of papers during the reviewing process.
+
+        <p></p>
+        <b>Submission format:</b> <a href=https://github.com/ICLR/Master-Template>ICLR 2024 paper style</a>
+
+        <p></p>
+        <b>Submission link:</b> <a href=https://openreview.net/group?id=ICLR.cc/2024/Workshop/TS4H> OpenReview</a>
+
+        <p></p>
+        <b>Important Dates</b>
+        <ul>
+          <li>Submission Deadline: <b>February 16th, 2024 Anywhere on Earth</b> (AoE)</li>
+          <li>Acceptance Notifications: March 3rd, 2024</li>
+          <li>Workshop event: May 11th, 2024, In-person in Vienna, Austria.</li>
+        </ul>
+        
+        <b>Contact:</b> Please contact <a href=ts4h.chairs@gmail.com>ts4h.chairs@gmail.com</a> with any questions.
+      
+        <div class="row">
+          <h2><a name="organizers"></a>Organizers</h2>
+          <hr>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://sujaynagaraj.github.io/">
+                <img src="img/sujay.jpeg" style="width:58%" align="center">
+                <div class="caption">
+                  <h5>Sujay Nagaraj</h5>
+                  <p>
+                    M.D. Ph.D. Student, University of Toronto
+                  </p>
+                </div>
+              </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://waltergerych.github.io/">
+                <img src="img/walter.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Walter Gerych</h5>
+                  <p>
+                    Postdoc, Massachusetts Institute of Technology
+                  </p>
+                </div>
+              </a>
+            <!-- marzyeh</div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="http://www.cs.toronto.edu/~stonekaboni/">
+                <img src="img/sana.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Sana Tonekaboni</h5>
+                  <p>
+                    Postdoc, Broad Institute
+                  </p>
+                </div>
+              </a>
+            <!-- marzyeh</div> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://www.tomhartvigsen.com/">
+                <img src="img/tom.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Tom Hartvigsen</h5>
+                  <p>
+                    Assistant Professor, University of Virginia
+                  </p>
+                </div>
+              </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://ahmedmalaa.github.io/">
+                <img src="img/ahmed.png" style="width:92%" align="center">
+                <div class="caption">
+                  <h5>Ahmed Alaa</h5>
+                  <p>
+                    Assistant Professor, UC Berkeley and UCSF
+                  </p>
+                </div>
+              </a>
+            <!-- marzyeh</div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://emilybfox.su.domains/">
+                <img src="img/emily.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Emily Fox</h5>
+                  <p>
+                    Professor, Stanford University
+                  </p>
+                </div>
+              </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://goldenberglab.ca/">
+                <img src="img/anna.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Anna Goldenberg</h5>
+                  <p>
+                    Associate Professor, University of Toronto
+                  </p>
+                </div>
+              </a>
+            <!-- </div> -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+    &nbsp;
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
