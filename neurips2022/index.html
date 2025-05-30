@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NeurIPS Workshop.">
+  <meta name="author" content="Satya Narayan Shukla">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <title>Learning from Time Series for Health</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <style>
+      .back {
+        background:
+          linear-gradient(
+            rgba(30, 100, 160, 0.90),
+            rgba(0, 0, 0, 0.01)
+          ),
+          url("img/nola.jpeg") no-repeat center;
+        background-size: cover;
+      }
+      .back h2 {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+      }
+
+      .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+  }
+  </style>
+  <div class="jumbotron jumbotron-fluid back" style="padding-bottom: 100px;">
+    <div class="row header p-6 m-5">
+      <div class="p-1 mx-auto text-center text-white col-md-20 col-sm-12">
+        <h1 style="color:white;">
+          Learning from Time Series for Health
+        </h1>
+        <h2 style="color:white;">
+          Workshop at NeurIPS 2022, Room 392
+        </h2>
+        <h3 style="color:white;">
+          Contact: ts4h.chairs@gmail.com
+        </h3>
+        <br>
+        <!-- <a href="#speakers" class="btn" style="font-size:20px; display:inline-block">Invited Speakers</a> -->
+        <a href="index.html" class="btn" style="font-size:30px; color:white">Home</a>
+        <a href="call_for_papers.html" class="btn" style="font-size:30px; color:white">Call for Papers</a>
+        <a href="accepted_papers.html" class="btn" style="font-size:30px; color:white">Accepted Papers</a>
+        <a href="schedule.html" class="btn" style="font-size:30px; color:white">Schedule</a>
+        <!-- <a href="#organizers" class="btn" style="font-size:20px">Organizers</a> -->
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+
+    <div class="row" style="padding:20px">
+
+       <div class="hidden-xs col-sm-3 col-md-2" id="sidebar" role="navigation" style="margin-top:10px">
+        <!-- <ul class="nav nav-pills nav-stacked">
+          <li><a href="#speakers">Invited Speakers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#papers">Accepted Papers</a></li>
+        </ul> -->
+      </div>
+
+      <div class="col-xs-12 col-sm-9 col-md-9">
+
+        <!-- <div class="row">
+          <h1>Learning from Medical Time Series</h1>
+        </div> -->
+
+        <!-- <hr> -->
+
+        <div class="row" style="font-size:18px">
+          <p>
+            Time series data are ubiquitous in healthcare, from medical time series to wearable data,
+            and present an exciting opportunity for machine learning methods to extract actionable
+            insights about human health. However, huge gap remain between the existing time series
+            literature and what is needed to make machine learning systems practical and deployable
+            for healthcare. This is because learning from time series for health is notoriously
+            challenging: labels are often noisy or missing, data can be multimodal and extremely high dimensional,
+            missing values are pervasive, measurements are irregular, data distributions shift rapidly over time,
+            explaining model outcomes is challenging, and deployed models require careful maintenance over time.
+            These challenges introduce interesting research problems that the community has been actively working
+            on for the last few years, with significant room for contribution still remaining. Learning from time series
+            for health is a uniquely challenging and important area with increasing application. Significant advancements
+            are required to realize the societal benefits of these systems for healthcare. This workshop will bring
+            together machine learning researchers dedicated to advancing the field of time series modeling in
+            healthcare to bring these models closer to deployment.
+            </p>
+            <p><strong>We have extended the paper submission deadline for our workshop till September 30th, 2022.</strong>
+              Call for papers can be found <a href="https://timeseriesforhealth.github.io/call_for_papers">here</a>.</p>
+            <br>
+
+            <p>
+              We are offering travel awards for our workshop attendees. In order to apply for a travel
+              award please fill out this <a href="https://forms.gle/nCSeNxpAubnxCGnZ8">form</a> in full by November 15, 2022.  Travel awards will be announced by November 18, 2022.
+            </p>
+            <br>
+        </p>
+        </div>
+        <div class="row">
+          <h2><a name="speakers"></a>Speakers</h2>
+          <hr>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://viterbi-web.usc.edu/~liu32/">
+                <img src="img/yan.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Yan Liu</h5>
+                  <p>
+                    USC, Associate Professor
+                  </p>
+                </div>
+              </a>
+            <!-- marzyeh</div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://emilybfox.su.domains/">
+                <img src="img/emily.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Emily Fox</h5>
+                  <p>
+                    Stanford University, Professor
+                  </p>
+                </div>
+              </a>
+            <!-- marzyeh</div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://people.csail.mit.edu/dsontag/">
+                <img src="img/sontag.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>David Sontag</h5>
+                  <p>
+                    MIT, Professor
+                  </p>
+                </div>
+              </a>
+            <!-- marzyeh</div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://www.microsoft.com/en-us/research/people/sthyland/">
+                <img src="img/stephanie.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Stephanie Hyland</h5>
+                  <p>
+                    Microsoft Research, Senior Researcher
+                  </p>
+                </div>
+              </a>
+            <!-- marzyeh</div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://scholar.google.co.uk/citations?user=bGDCgpUAAAAJ&hl=en">
+                <img src="img/danielle.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Danielle Belgrave</h5>
+                  <p>
+                    DeepMind, Senior Staff Research Scientist
+                  </p>
+                </div>
+              </a>
+            <!-- marzyeh</div> -->
+          </div>
+        </div>
+        <!-- <div class="row">
+          <h2><a name="schedule"></a>Schedule</h2>
+          <hr>
+          <table class="table" border="2" cellpadding="2" cellspacing="2">
+            <tbody>
+              <tr>
+                <td> 09:00 - 09:15 </td>
+                <td> Opening remarks </td>
+              </tr>
+              <tr>
+                <td> 09:15 - 09:45 </td>
+                <td> Invited talk - Yan Liu, USC (confirmed) </td>
+              </tr>
+              <tr>
+                <td> 09:45 - 10:15 </td>
+                <td> Invited Talk - Emily Fox, Stanford (confirmed)</td>
+              </tr>
+              <tr>
+                <td> 10:15 - 10:30 </td>
+                <td> Coffee Break </td>
+              </tr>
+              <tr>
+                <td> 10:30 - 11:00 </td>
+                <td> Invited talk - Stephanie Hyland, Microsoft Research UK (confirmed) </td>
+              </tr>
+              <tr>
+                <td> 11:00 - 11:30 </td>
+                <td> Contributed talks for poster session 1 </td>
+              </tr>
+              <tr>
+                <td> 11:30 - 12:30 </td>
+                <td> Coffee break and poster session 1 </td>
+              </tr>
+              <tr>
+                <td> 12:30 - 01:30 </td>
+                <td> Mentorship lunch break </td>
+              </tr>
+              <tr>
+                <td> 01:30 - 02:00 </td>
+                <td> Invited Talk - David Sontag, MIT (confirmed) </td>
+              </tr>
+              <tr>
+                <td> 02:00 - 02:30 </td>
+                <td> Invited Talk - Danielle Belgrave, DeepMind UK (confirmed)</td>
+              </tr>
+              <tr>
+                <td> 02:30 - 03:00 </td>
+                <td> Contributed talks for poster session 2 </td>
+              </tr>
+              <tr>
+                <td> 03:00 - 04:00 </td>
+                <td> Coffee break and poster session 2 </td>
+              </tr>
+              <tr>
+                <td> 04:00 - 05:00 </td>
+                <td> An interactive panel discussion on “Challenges and lessons learned  in deploying ML time series models” </td>
+              </tr>
+              <tr>
+                <td> 05:00 - 05:10 </td>
+                <td> Awards and Closing Remarks </td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+
+        <div class="row">
+          <h2><a name="organizers"></a>Organizers</h2>
+          <hr>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="http://www.cs.toronto.edu/~stonekaboni/">
+                <img src="img/sana.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Sana Tonekaboni</h5>
+                  <p>
+                    University of Toronto, PhD Student
+                  </p>
+                </div>
+              </a>
+            <!-- marzyeh</div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://www.tomhartvigsen.com/">
+                <img src="img/tom.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Thomas Hartvigsen</h5>
+                  <p>
+                    MIT, Postdoc
+                  </p>
+                </div>
+              </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://satyanshukla.github.io/">
+                <img src="img/satya3.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Satya Narayan Shukla</h5>
+                  <p>
+                    Meta AI, Research Scientist
+                  </p>
+                </div>
+              </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://bmi.inf.ethz.ch/people/person/gunnar-raetsch">
+                <img src="img/gunnar.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Gunnar Rätsch</h5>
+                  <p>
+                    ETH Zurich, Professor
+                  </p>
+                </div>
+              </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://healthyml.org/marzyeh/">
+                <img src="img/marzyeh.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Marzyeh Ghassemi</h5>
+                  <p>
+                    MIT, Assistant Professor
+                  </p>
+                </div>
+              </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <!-- <div class="thumbnail"> -->
+              <a href="https://goldenberglab.ca/">
+                <img src="img/anna.png" style="width:88%" align="center">
+                <div class="caption">
+                  <h5>Anna Goldenberg</h5>
+                  <p>
+                    University of Toronto, Associate Professor
+                  </p>
+                </div>
+              </a>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="row">
+          <h2><a name="sponsors"></a>Sponsors</h2>
+          <hr>
+          <div class="col-xs-6 col-md-4">
+                <img src="img/image2.jpg" style="width:88%" align="center">
+          </div>
+          <div class="col-xs-6 col-md-4">
+                <img src="img/image3.jpg" style="width:88%" align="center">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+    &nbsp;
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

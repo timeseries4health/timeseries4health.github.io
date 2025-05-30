@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NeurIPS Workshop.">
+  <meta name="author" content="Satya Narayan Shukla">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <title>Learning from Time Series for Health</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <style>
+    .back {
+      background:
+        linear-gradient(
+          rgba(30, 100, 160, 0.90),
+          rgba(0, 0, 0, 0.01)
+        ),
+        url("img/nola.jpeg") no-repeat center;
+      background-size: cover;
+    }
+    .back h2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 500;
+      font-size: 3rem;
+    }
+
+    .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+</style>
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 100px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-20 col-sm-12">
+      <h1 style="color:white;">
+        Learning from Time Series for Health
+      </h1>
+      <h2 style="color:white;">
+        Workshop at NeurIPS 2022, Room 392
+      </h2>
+      <h3 style="color:white;">
+        Contact: ts4h.chairs@gmail.com
+      </h3>
+      <br>
+      <!-- <a href="#speakers" class="btn" style="font-size:20px; display:inline-block">Invited Speakers</a> -->
+      <a href="index" class="btn" style="font-size:30px; color:white">Home</a>
+      <a href="call_for_papers" class="btn" style="font-size:30px; color:white">Call for Papers</a>
+      <a href="accepted_papers" class="btn" style="font-size:30px; color:white">Accepted Papers</a>
+      <a href="schedule" class="btn" style="font-size:30px; color:white">Schedule</a>
+      <!-- <a href="#organizers" class="btn" style="font-size:20px">Organizers</a> -->
+    </div>
+
+  </div>
+
+</div>
+  <div class="container">
+
+    <div class="row" style="padding:20px">
+
+       <div class="hidden-xs col-sm-3 col-md-2" id="sidebar" role="navigation" style="margin-top:10px">
+        <!-- <ul class="nav nav-pills nav-stacked">
+          <li><a href="#speakers">Invited Speakers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#papers">Accepted Papers</a></li>
+        </ul> -->
+      </div>
+
+      <div class="col-xs-12 col-sm-9 col-md-9">
+        <div class="row" style="font-size:16px">
+          <h2><a name="schedule"></a>Schedule</h2>
+          <hr>
+          <p><strong>2022 Workshop Agenda</strong></p>
+          <p></p>Location: New Orleans, LA</p>
+          <p> Friday, December 2, 2022 (all times in CST)</p>
+          <!-- <p>
+            9:00 - 9:15
+            <strong> Opening remarks </strong>
+          </p> -->
+          <hr>
+          <table class="table" border="2" cellpadding="2" cellspacing="2">
+            <!-- <thead>
+              <tr>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Title</th>
+              </tr>
+            </thead> -->
+            <tbody>
+              <tr>
+                <td> 09:00 - 09:15 </td>
+                <td> Opening remarks from the organizers </td>
+              </tr>
+              <tr>
+                <td> 09:15 - 09:45 </td>
+                <td> <strong>Invited talk: Yan Liu</strong>, Interpretability and Fairness of Deep Learning Models on Health Dataset  </td>
+              </tr>
+              <tr>
+                <td> 9:45 - 10:15 </td>
+                <td> <strong>Invited Talk: Stephanie Hyland</strong>, Machine learning for intensive and perioperative care </td>
+              </tr>
+              <tr>
+                <td> 10:15 - 10:30 </td>
+                <td> Coffee Break </td>
+              </tr>
+              <tr>
+                <td> 10:30 - 11:00 </td>
+                <td> <strong>Invited Talk: Danielle Belgrave</strong>  </td>
+              </tr>
+              <tr>
+                <td> 11:00 - 11:30 </td>
+                <td> Contributed talks for poster session 1 </td>
+              </tr>
+              <tr>
+                <td> 11:30 - 12:30 </td>
+                <td> Coffee break and poster session 1 </td>
+              </tr>
+              <tr>
+                <td> 12:30 - 01:30 </td>
+                <td> Mentorship lunch break </td>
+              </tr>
+              <tr>
+                <td> 01:30 - 02:00 </td>
+                <td> <strong>Invited Talk: Emily Fox</strong>, AI-driven remote monitoring for type 1 diabetes </td>
+              </tr>
+              <tr>
+                <td> 02:00 - 02:30 </td>
+                <td> <strong>Invited Talk: David Sontag</strong>, Modeling multivariate time series of disease progression</td>
+              </tr>
+              <tr>
+                <td> 02:30 - 03:00 </td>
+                <td> Contributed talks for poster session 2 </td>
+              </tr>
+              <tr>
+                <td> 03:00 - 04:00 </td>
+                <td> Coffee break and poster session 2 </td>
+              </tr>
+              <tr>
+                <td> 04:00 - 05:00 </td>
+                <td> Panel discussion on “Challenges and lessons learned in deploying ML time series models” </td>
+              </tr>
+              <tr>
+                <td> 05:00 - 05:10 </td>
+                <td> Closing Remarks </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+    &nbsp;
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
