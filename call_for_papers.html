@@ -1,26 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="NeurIPS Workshop.">
-  <meta name="author" content="Satya Narayan Shukla">
+  <meta name="description" content="NeurIPS Workshop on Learning from Time Series for Health.">
+  <meta name="author" content="TS4H Organizers">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-  <title>Learning from Time Series for Health</title>
+  <title>Call for Papers | Learning from Time Series for Health</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
+  </head>
 <body>
   <style>
     .back {
@@ -37,13 +30,20 @@
       font-weight: 500;
       font-size: 3rem;
     }
-
     .helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-</style>
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .nav .btn {
+      font-size: 30px; 
+      color: white;
+    }
+    /* Style for the active navigation link */
+    .nav a.active {
+      text-decoration: underline;
+    }
+  </style>
 <div class="jumbotron jumbotron-fluid back" style="padding-bottom: 100px;">
   <div class="row header p-6 m-5">
     <div class="p-1 mx-auto text-center text-white col-md-20 col-sm-12">
@@ -57,165 +57,154 @@
         Contact: ts4h.chairs@gmail.com
       </h3>
       <br>
-      <!-- <a href="#speakers" class="btn" style="font-size:20px; display:inline-block">Invited Speakers</a> -->
-      <a href="index.html" class="btn" style="font-size:30px; color:white">Home</a>
-      <a href="call_for_papers.html" class="btn" style="font-size:30px; color:white">Call for Papers</a>
-      <!-- <a href="accepted_papers.html" class="btn" style="font-size:30px; color:white">Accepted Papers</a> -->
-      <a href="schedule.html" class="btn" style="font-size:30px; color:white">Schedule</a>
-      <style>
-        .dropdown {
-          position: relative;
-          display: inline-block;
-        }
-        
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-        
-        .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-        
-        .dropdown-content a:hover {
-          background-color: #f1f1f1;
-        }
-        
-        .dropdown:hover .dropdown-content {
-          display: block;
-        }
+      <div class="nav">
+        <a href="index.html" class="btn">Home</a>
+        <a href="call_for_papers.html" class="btn active">Call for Papers</a>
+        <a href="schedule.html" class="btn">Schedule</a>
+        <style>
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #f1f1f1;
+          }
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
         </style>
         <div class="dropdown" style="display:inline-block;">
-        <a href="#" class="btn" style="font-size:30px; color:white">Prior Years</a>
-        <div class="dropdown-content">
-            <a href="iclr2024/index.html">ICLR 2024</a>
-            <a href="neurips2022/index.html">NeurIPS 2022</a>
-            <!-- Add more years as needed -->
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-  <div class="container">
-
-    <div class="row" style="padding:20px">
-
-       <div class="hidden-xs col-sm-3 col-md-2" id="sidebar" role="navigation" style="margin-top:10px">
-        <!-- <ul class="nav nav-pills nav-stacked">
-          <li><a href="#speakers">Invited Speakers</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#organizers">Organizers</a></li>
-          <li><a href="#papers">Accepted Papers</a></li>
-        </ul> -->
-      </div>
-
-      <div class="col-xs-12 col-sm-9 col-md-9">
-
-        <div class="row" style="font-size:18px">
-          <h2><a name=""></a>Call for Papers</h2>
-          <hr>
-          <p>
-          In the time series for health workshop, we will explore challenges when dealing with time series data to better understand and improve human health.
-          Time series are highly diverse, spanning a variety of modalities including wearables, Electronic Health Record (EHR) data, medical time series
-          (ECG, EEG, fMRI), and audio, amongst others. Submitted papers should discuss novel methods or perspectives, present preliminary results for promising
-          future directions, or introduce resources, like datasets, that accelerate research in this area. All papers must clearly demonstrate or discuss their
-          relevance to healthcare, and in particular, focus on challenges with health time series data. Potential topics can include, but are not limited to:
-        </p>
-          <ul>
-            <li>
-              <p>Unsupervised, semi-supervised, and supervised representation learning</p>
-            </li>
-            <li>
-              <p>Novel architecture or models for time series</p>
-            </li>
-            <li>
-              <p>Classification, regression, and forecasting</p>
-            </li>
-            <li>
-              <p>Bayesian models</p>
-            </li><li>
-              <p>Sequential decision making</p>
-            </li><li>
-              <p>Handling time series data challenges like missing values, noisy and irregular measurements, high-dimensionality, etc.</p>
-            </li>
-            <li>
-              <p>Multi-modal models including time series</p>
-            </li>
-            <li>
-              <p>Deployment and implementation challenges</p>
-            </li>
-            <li>
-              <p>Explainability, fairness, and privacy for time series models</p>
-            </li>
-            <li>
-              <p>Challenging applied problems (e.g., “dynamic treatment recommendation for sepsis from EHR time series”)</p>
-            </li>
-          </ul>
-          <p>Where appropriate, we encourage authors to add discussions of any ethical considerations relevant to the presented work.
-          </p>
-        </div>
-        <div class="row" style="font-size:18px">
-          <h2><a name=""></a>Submission Instructions</h2>
-          <hr>
-        <P>Authors are invited to submit short papers with up to 4 pages, but unlimited number of pages
-          for references. Authors may use as many pages of appendices (after the bibliography) as they wish,
-          but reviewers are not required to read the appendix.
-          All accepted papers will be presented in person as posters and lightning talks.
-          There are no formal proceedings generated from this workshop.
-          Authors are encouraged to make their work publicly available through our online listing of presented work.
-        </P>
-        <p>The reviewing process will be double-blind.
-          Please submit anonymized versions of your paper that include no identifying information about any author
-          identities or affiliations. Submitted papers must be new work that has not yet been published.
-        </p>
-        <p>More details are soon to come ...
-        </p>
-        <!-- <p>TS4H is collaborating with Machine Learning for Health, co-located at NeurIPS.
-          If you would like your paper to be considered for their workshop as well, please follow their submission
-          guidelines - this includes a submission deadline of September 1, 2022 and papers up to 4 pages,
-          excluding references.
-        </p>
-        <p>
-          Submission format: <a href="https://timeseriesforhealth.github.io/neurips_ts4h_template.zip">Latex style files</a>
-        </p>
-        <p>
-        Submission link: <a href="https://openreview.net/group?id=NeurIPS.cc/2022/Workshop/TS4H">OpenReview</a>
-        </p>
-      </div>
-      <div class="row" style="font-size:18px">
-        <h2><a name=""></a>Important Dates</h2>
-        <hr>
-          <p>Submission Deadline: <s>September 22nd</s> <strong>September 30th, 2022 Anywhere on Earth (AoE)</strong></p>
-          <p>Notifications: <strong>October 22nd, 2022</strong></p>
-          <p>Workshop event: <strong>December 2nd, 2022, In-person in New Orleans, LA, USA</strong></p>
-      </div> -->
-
-      <div class="row" style="font-size:18px">
-        <h2><a name=""></a>Code of Conduct</h2>
-        <hr>
-          <p>Authors will be asked to confirm that their submissions accord with the <a href="https://nips.cc/public/CodeOfConduct">NeurIPS code of conduct</a>.</p>
+          <a href="#" class="btn">Prior Years</a>
+          <div class="dropdown-content">
+              <a href="iclr2024/index.html">ICLR 2024</a>
+              <a href="neurips2022/index.html">NeurIPS 2022</a>
           </div>
-
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 
-    <hr>
+<div class="container">
+  <div class="row" style="padding:20px">
+    <div class="hidden-xs col-sm-3 col-md-2" id="sidebar" role="navigation" style="margin-top:10px">
+      </div>
 
-    <footer>
-    &nbsp;
-    </footer>
+    <div class="col-xs-12 col-sm-9 col-md-9">
 
+      <div class="row" style="font-size:18px">
+        <h2><a name="call-for-papers"></a>Call for Papers</h2>
+        <hr>
+        <p>
+          The Learning from Time Series for Health (TS4H) workshop is returning to NeurIPS 2025, and invites submissions focused on the unique challenges and opportunities in modeling time series data to better understand and improve human health.
+          Time series data is ubiquitous in modern healthcare, spanning diverse modalities such as wearables, sensors, medical waveforms, and electronic health records. This workshop brings together researchers working across methodological and applied areas to address questions unique to the intersection of time series analysis and health.
+        </p>
+      </div>
+<style>
+        .topic-category {
+          font-size: 21px; /* Slightly larger than the default h4 */
+          font-weight: normal; /* Not bold */
+          margin-top: 20px;
+        }
+        .topic-detail {
+          font-size: 15px; /* Smaller size for the descriptive text */
+          color: #555;
+        }
+      </style>
+
+      <div class="row" style="font-size:18px">
+        <h2><a name="topics"></a>Topics of Interest</h2>
+        <hr>
+        <p>Submissions may explore (but are not limited to) the following topics:</p>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="topic-category">Models & Methods</h4>
+            <ul>
+              <li><b>Novel Architectures:</b> <span class="topic-detail">State-space models, diffusion models, etc.</span></li>
+              <li><b>Foundation Models:</b> <span class="topic-detail">Pre-training, scaling, and alignment.</span></li>
+              <li><b>Deep Learning:</b> <span class="topic-detail">Supervised, self-supervised, and unsupervised methods.</span></li>
+              <li><b>Probabilistic Modeling:</b> <span class="topic-detail">Uncertainty quantification and Bayesian methods.</span></li>
+              <li><b>Sequential Decision-Making:</b> <span class="topic-detail">Reinforcement learning and optimal control.</span></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="topic-category">Data-Specific Challenges</h4>
+            <ul>
+              <li><b>Multimodal Learning:</b> <span class="topic-detail">Fusing time series with images, text, or genomics.</span></li>
+              <li><b>Irregular & Missing Data:</b> <span class="topic-detail">Handling sparse or irregularly-sampled series.</span></li>
+              <li><b>Complex Signals:</b> <span class="topic-detail">Modeling high-dimensional or multi-resolution data.</span></li>
+              <li><b>Causal Inference:</b> <span class="topic-detail">Inferring cause-and-effect from observational data.</span></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="topic-category">Applications & Trustworthy AI</h4>
+            <ul>
+              <li><b>Clinical Applications:</b> <span class="topic-detail">Forecasting, risk stratification, digital biomarkers.</span></li>
+              <li><b>Trust & Reliability:</b> <span class="topic-detail">Explainability, fairness, robustness, and privacy.</span></li>
+              <li><b>Deployment & Implementation:</b> <span class="topic-detail">Real-world case studies and MLOps.</span></li>
+              <li><b>New Resources:</b> <span class="topic-detail">Public datasets, benchmarks, and software.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="font-size:18px">
+        <h2><a name="instructions"></a>Submission Instructions</h2>
+        <hr>
+        <p>
+          We invite short papers of <strong>up to 4 pages</strong>, excluding references and appendices. All submissions must follow the official NeurIPS ‘25 paper formatting guidelines and be fully <strong>anonymized</strong> for a double-blind review process. Submitted work should be original and unpublished, though submissions on preprint servers like arXiv are permitted. Authors will be asked to confirm that their submissions accord with the <a href="https://neurips.cc/public/CodeOfConduct">NeurIPS Code of Conduct</a>
+        </p>
+        <p>
+          All accepted papers must be presented <strong>in person</strong> at the workshop. This is a non-archival venue and there will be no formal proceedings.
+        </p>
+        <br>
+        <p>
+          <a href="#" class="btn btn-primary btn-lg disabled">OpenReview Submission (Link Coming Soon)</a>
+        </p>
+      </div>
+
+      <div class="row" style="font-size:18px">
+        <h2><a name="dates"></a>Important Dates</h2>
+        <hr>
+        <p><strong>Submission Deadline:</strong> August 22, 2025 (Anywhere on Earth)</p>
+        <p><strong>Acceptance Notification:</strong> September 22, 2025</p>
+        <p><strong>Workshop Date:</strong> December 6 or 7, 2025 (Co-located with NeurIPS '25 in San Diego, United States)</p>
+      </div>
+    </div>
   </div>
 
-  <!-- JavaScript -->
+  <hr>
+
+  <footer>
+  &nbsp;
+  </footer>
+</div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script type="text/x-mathjax-config">
