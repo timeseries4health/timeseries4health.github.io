@@ -57,7 +57,7 @@
       transform: translateY(-5px);
       color: #0056b3;
     }
-    .profile-image {
+    .profile-image { /* Default image size */
       width: 140px;
       height: 140px;
       border-radius: 50%;
@@ -75,10 +75,29 @@
     }
     h3.committee-title {
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin-top: 30px;
         margin-bottom: 20px;
     }
+    .profile-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* --- NEW STYLES FOR IMAGE SIZES --- */
+    /* Primary Organizers: smaller than speakers */
+    #organizers .profile-row:first-of-type .profile-image {
+        width: 110px;
+        height: 110px;
+    }
+    /* Advisory Organizers: smallest */
+    #organizers .profile-row:last-of-type .profile-image {
+        width: 90px;
+        height: 90px;
+    }
+    /* --- END OF NEW STYLES --- */
+
   </style>
 </head>
 
@@ -87,7 +106,7 @@
     <div class="row header p-6 m-5">
       <div class="p-1 mx-auto text-center text-white col-md-20 col-sm-12">
         <h1>Learning from Time Series for Health</h1>
-        <h2>Workshop at NeurIPS 2025</h2>
+        <h2> NeurIPS 2025 Workshop | December 6/7</h2>
         <h3>Contact: ts4h.chairs@gmail.com</h3>
         <br>
         <div class="nav">
@@ -116,109 +135,110 @@
                 <p>
                 Time-series data underpin modern healthcare, spanning electronic health records, physiological waveforms, wearables, and population trends, yet their unique characteristics—including uncertain ground truth, quasi-periodic physiological motifs, and non-semantic timepoints—demand specialized machine learning approaches. While recent advances in foundation models, multimodal learning, and generative methods show promise, significant challenges remain in causality, interpretability, and deployment. 
                 </p>
-                 <img src="img/ts4h.png" alt="Banner illustrating various types of health time-series data" style="display: block; margin-left: auto; margin-right: auto; width: 65%; border-radius: 8px; margin-bottom: 15px;margin-top: 15px;">                
-                <p>                                                                              
+                 <img src="img/ts4h.png" alt="Banner illustrating various types of health time-series data" style="display: block; margin-left: auto; margin-right: auto; width: 65%; border-radius: 8px; margin-bottom: 15px;margin-top: 15px;">                               
+                <p>                                                                                        
                 This workshop unites researchers across health time-series domains (from wearables to clinical systems) to address shared challenges through: (1) cross-domain discussion, (2) diverse industry/academic perspectives (featuring Google, Oura, Apple and 5 institutions), and (3) community engagement via posters, talks, and panels. By fostering cross-domain collaboration on physiological-aware methods, we aim to bridge the gap between cutting-edge ML and real-world healthcare impact.
                 </p>
 
                 <hr>
                 <div style="text-align: center; font-size: 1em; padding: 1em;">
-                <p>We invite you to submit your work by <strong>August 22, 2025</strong> (Anywhere on Earth).</p>
+                <p>We invite you to submit your work on Time-series 4 Health by <strong>August 22, 2025</strong> (AOE).</p>
                 <p>To recognize an outstanding contribution, we are pleased to offer a <strong>$500 Best Paper Prize</strong>. 🏆</p>
                 <a href="call_for_papers.html" class="btn btn-primary" style="margin-top: 10px;">View Call for Papers</a>
 
                 </div>
             </section>
 
-            <section>
+            <section id="speakers">
                 <h2><a name="speakers"></a>Speakers</h2>
                 <hr>
-                <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="profile-card">
-                    <a href="https://homes.cs.washington.edu/~shwetak/">
-                        <img src="img/shwetak.jpg" class="profile-image">
-                        <div class="profile-name">Shwetak Patel, PhD</div>
-                        <div class="profile-affiliation">Professor at UWashington, Senior Director of Google Health</div>
-                    </a>
+                <div class="row profile-row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="profile-card">
+                        <a href="https://homes.cs.washington.edu/~shwetak/">
+                            <img src="img/shwetak.jpg" class="profile-image">
+                            <div class="profile-name">Shwetak Patel, PhD</div>
+                            <div class="profile-affiliation">Professor at UWashington, Senior Director of Google Health</div>
+                        </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="profile-card">
-                    <a href="https://emilybfox.su.domains/">
-                        <img src="img/emily.png" class="profile-image">
-                        <div class="profile-name">Emily Fox, PhD</div>
-                        <div class="profile-affiliation">Professor at Stanford University, SVP of AI at inistro</div>
-                    </a>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="profile-card">
+                        <a href="https://emilybfox.su.domains/">
+                            <img src="img/emily.png" class="profile-image">
+                            <div class="profile-name">Emily Fox, PhD</div>
+                            <div class="profile-affiliation">Professor at Stanford, SVP of AI at inistro</div>
+                        </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="profile-card">
-                    <a href="https://lab.research.sickkids.ca/goldenberg/">
-                        <img src="img/anna.png" class="profile-image">
-                        <div class="profile-name">Anna Goldenberg, PhD</div>
-                        <div class="profile-affiliation">Professor at University of Toronto, Researcher at SickKids Institute</div>
-                    </a>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="profile-card">
+                        <a href="https://lab.research.sickkids.ca/goldenberg/">
+                            <img src="img/anna.png" class="profile-image">
+                            <div class="profile-name">Anna Goldenberg, PhD</div>
+                            <div class="profile-affiliation">Professor at UToronto, Chair of AI at SickKids Institute</div>
+                        </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="profile-card">
-                    <a href="https://www.dbmi.columbia.edu/profile/matthew-mcdermott/">
-                        <img src="img/mathew.jpg" class="profile-image">
-                        <div class="profile-name">Matthew McDermott, PhD</div>
-                        <div class="profile-affiliation">Assistant Professor at Columbia University</div>
-                    </a>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="profile-card">
+                        <a href="https://www.dbmi.columbia.edu/profile/matthew-mcdermott/">
+                            <img src="img/mathew.jpg" class="profile-image">
+                            <div class="profile-name">Matthew McDermott, PhD</div>
+                            <div class="profile-affiliation">Assistant Professor at Columbia</div>
+                        </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="profile-card">
-                    <a href="https://mp2893.com/">
-                        <img src="img/edward.jpeg" class="profile-image">
-                        <div class="profile-name">Edward Choi, PhD</div>
-                        <div class="profile-affiliation">Associate Professor at KAIST</div>
-                    </a>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="profile-card">
+                        <a href="https://mp2893.com/">
+                            <img src="img/edward.jpeg" class="profile-image">
+                            <div class="profile-name">Edward Choi, PhD</div>
+                            <div class="profile-affiliation">Associate Professor at KAIST</div>
+                        </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="profile-card">
-                    <a href="https://www.linkedin.com/in/jaya-narain-5b6b0963/">
-                        <img src="img/jaya.jpeg" class="profile-image">
-                        <div class="profile-name">Jaya Narain, PhD</div>
-                        <div class="profile-affiliation">Research Scientist at Apple</div>
-                    </a>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="profile-card">
+                        <a href="https://www.linkedin.com/in/jaya-narain-5b6b0963/">
+                            <img src="img/jaya.jpeg" class="profile-image">
+                            <div class="profile-name">Jaya Narain, PhD</div>
+                            <div class="profile-affiliation">Research Scientist at Apple</div>
+                        </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="profile-card">
-                    <a href="https://ouraring.com/blog/reviewed-by/xi-zhang-phd-vp-health-sensing/?srsltid=AfmBOorCIHhfkyuha_O_e_shOCb9rsJpOAJyFMx-znTbv6Ef2yKJwCwo">
-                        <img src="img/xi.png" class="profile-image">
-                        <div class="profile-name">Xi Zhang, PhD</div>
-                        <div class="profile-affiliation">VP of Health Sensing at Oura</div>
-                    </a>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="profile-card">
+                        <a href="https://ouraring.com/blog/reviewed-by/xi-zhang-phd-vp-health-sensing/?srsltid=AfmBOorCIHhfkyuha_O_e_shOCb9rsJpOAJyFMx-znTbv6Ef2yKJwCwo">
+                            <img src="img/xi.png" class="profile-image">
+                            <div class="profile-name">Xi Zhang, PhD</div>
+                            <div class="profile-affiliation">VP of Health Sensing at Oura</div>
+                        </a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
             
-            <section>
+            <section id="organizers">
                 <h2><a name="organizers"></a>Organizers</h2>
                 <hr>
-                <div class="row">
-                    <h3 class="committee-title">Primary Committee</h3>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://maxxu05.github.io/"><img src="img/max.jpg" class="profile-image"><div class="profile-name">Maxwell Xu</div><div class="profile-affiliation">UIUC, PhD Student</div></a></div></div>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://sites.google.com/view/hyewon-jeong/"><img src="img/hyewon.jpeg" class="profile-image"><div class="profile-name">Hyewon Jeong, MD</div><div class="profile-affiliation">MIT, PhD Student</div></a></div></div>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://girishvn.github.io/"><img src="img/girish.jpg" class="profile-image"><div class="profile-name">Girish Narayanswamy</div><div class="profile-affiliation">UWashington, PhD Student</div></a></div></div>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://wantingmao01.github.io/"><img src="img/wanting.jpeg" class="profile-image"><div class="profile-name">Wanting Mao</div><div class="profile-affiliation">UIUC, PhD Student</div></a></div></div>
+                <h3 class="committee-title">Primary Committee</h3>
+                <div class="row profile-row">
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://maxxu05.github.io/"><img src="img/max.jpg" class="profile-image"><div class="profile-name">Maxwell Xu</div><div class="profile-affiliation">UIUC, PhD Student</div></a></div></div>
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://sites.google.com/view/hyewon-jeong/"><img src="img/hyewon.jpeg" class="profile-image"><div class="profile-name">Hyewon Jeong, MD</div><div class="profile-affiliation">MIT, PhD Student</div></a></div></div>
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://girishvn.github.io/"><img src="img/girish.jpg" class="profile-image"><div class="profile-name">Girish Narayanswamy</div><div class="profile-affiliation">UWashington, PhD Student</div></a></div></div>
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://wantingmao01.github.io/"><img src="img/wanting.jpeg" class="profile-image"><div class="profile-name">Wanting Mao</div><div class="profile-affiliation">UIUC, PhD Student</div></a></div></div>
                 </div>
-                <div class="row">
-                    <h3 class="committee-title">Advisory Committee</h3>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://rehg.org/"><img src="img/james.jpg" class="profile-image"><div class="profile-name">James M. Rehg, PhD</div><div class="profile-affiliation">UIUC, Founder Professor</div></a></div></div>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="http://www.cs.toronto.edu/~stonekaboni/"><img src="img/sana.png" class="profile-image"><div class="profile-name">Sana Tonekaboni, PhD</div><div class="profile-affiliation">MIT-Harvard Broad Institute, Postdoc</div></a></div></div>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://sujaynagaraj.github.io/"><img src="img/sujay.jpeg" class="profile-image"><div class="profile-name">Sujay Nagaraj</div><div class="profile-affiliation">U Toronto, MD/PhD Student</div></a></div></div>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://www.tomhartvigsen.com/"><img src="img/tom.jpeg" class="profile-image"><div class="profile-name">Tom Hartvigsen, PhD</div><div class="profile-affiliation">U Virginia, Assistant Professor</div></a></div></div>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://xliucs.github.io/"><img src="img/xin.jpeg" class="profile-image"><div class="profile-name">Xin Liu, PhD</div><div class="profile-affiliation">Google, Research Scientist</div></a></div></div>
-                    <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://dispathis.com/"><img src="img/dimitris.jpg" class="profile-image"><div class="profile-name">Dimitris Spathis, PhD</div><div class="profile-affiliation">Google, Research Scientist</div></a></div></div>
-                     <div class="col-sm-6 col-md-4"><div class="profile-card"><a href="https://satyanshukla.github.io/"><img src="img/satya.jpg" class="profile-image"><div class="profile-name">Satya Shukla, PhD</div><div class="profile-affiliation">Meta, Research Scientist</div></a></div></div>
+                
+                <h3 class="committee-title">Advisory Committee</h3>
+                <div class="row profile-row">
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://rehg.org/"><img src="img/james.jpg" class="profile-image"><div class="profile-name">James M. Rehg, PhD</div><div class="profile-affiliation">UIUC, Founder Professor</div></a></div></div>
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="http://www.cs.toronto.edu/~stonekaboni/"><img src="img/sana.png" class="profile-image"><div class="profile-name">Sana Tonekaboni, PhD</div><div class="profile-affiliation">MIT-Harvard Broad Institute, Postdoc</div></a></div></div>
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://sujaynagaraj.github.io/"><img src="img/sujay.jpeg" class="profile-image"><div class="profile-name">Sujay Nagaraj</div><div class="profile-affiliation">U Toronto, MD/PhD Student</div></a></div></div>
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://www.tomhartvigsen.com/"><img src="img/tom.jpeg" class="profile-image"><div class="profile-name">Tom Hartvigsen, PhD</div><div class="profile-affiliation">U Virginia, Assistant Professor</div></a></div></div>
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://xliucs.github.io/"><img src="img/xin.jpeg" class="profile-image"><div class="profile-name">Xin Liu, PhD</div><div class="profile-affiliation">Google, Research Scientist</div></a></div></div>
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://dispathis.com/"><img src="img/dimitris.jpg" class="profile-image"><div class="profile-name">Dimitris Spathis, PhD</div><div class="profile-affiliation">Google, Research Scientist</div></a></div></div>
+                    <div class="col-sm-6 col-md-3"><div class="profile-card"><a href="https://satyanshukla.github.io/"><img src="img/satya.jpg" class="profile-image"><div class="profile-name">Satya Shukla, PhD</div><div class="profile-affiliation">Meta, Research Scientist</div></a></div></div>
                 </div>
             </section>
         </div>
@@ -237,7 +257,7 @@
     });
   </script>
   <script type="text/javascript"
-     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
   <script type="text/javascript" src="/js/main.js"></script>
 </body>
