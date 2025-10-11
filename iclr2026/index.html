@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ICLR Workshop on Learning from Time Series for Health.">
+  <meta name="author" content="TS4H Organizers">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Home | Learning from Time Series for Health</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    /* General Styles */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Header & Navigation */
+    .back {
+      background:
+        linear-gradient(rgba(30, 100, 160, 0.50), rgba(0, 0, 0, 0.10)),
+        url("img/rio.jpeg") no-repeat center;
+      background-size: cover;
+      padding-bottom: 100px;
+    }
+
+    .back h1,
+    .back h2,
+    .back h3 {
+      color: white;
+    }
+
+    .back h2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 500;
+      font-size: 3rem;
+    }
+
+    .nav .btn {
+      font-size: 30px;
+      color: white;
+    }
+
+    .nav a.active {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Profile Cards for Speakers & Organizers */
+    .profile-card {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-card a {
+      color: #333;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.2s;
+    }
+
+    .profile-card a:hover {
+      transform: translateY(-5px);
+      color: #0056b3;
+    }
+
+    .profile-image {
+      /* Default image size */
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 15px auto;
+      border: 4px solid #f0f0f0;
+    }
+
+    .profile-name {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .profile-affiliation {
+      font-size: 14px;
+      color: #666;
+    }
+
+    h3.committee-title {
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .profile-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* --- NEW STYLES FOR IMAGE SIZES --- */
+    /* Primary Organizers: smaller than speakers */
+    #organizers .profile-row:first-of-type .profile-image {
+      width: 110px;
+      height: 110px;
+    }
+
+    /* Advisory Organizers: smallest */
+    #organizers .profile-row:last-of-type .profile-image {
+      width: 90px;
+      height: 90px;
+    }
+
+    /* --- END OF NEW STYLES --- */
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid back">
+    <div class="row header p-6 m-5">
+      <div class="p-1 mx-auto text-center text-white col-md-20 col-sm-12">
+        <h1>Learning from Time Series for Health</h1>
+        <h2> ICLR 2026 Workshop | April 28/29</h2>
+        <h3>Contact: ts4h.chairs@gmail.com</h3>
+        <br>
+        <div class="nav">
+          <a href="index.html" class="btn active">Home</a>
+          <a href="call_for_papers.html" class="btn">Call for Papers</a>
+          <a href="schedule.html" class="btn">Schedule</a>
+          <div class="dropdown">
+            <a href="#" class="btn">Prior Years</a>
+            <div class="dropdown-content">
+              <a href="iclr2024/index.html">ICLR 2024</a>
+              <a href="neurips2022/index.html">NeurIPS 2022</a>
+              <a href="neurips2025/index.html">NeurIPS 2025</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="hidden-xs col-sm-3 col-md-2" id="sidebar"></div>
+
+      <div class="col-xs-12 col-sm-9 col-md-9">
+        <section style="font-size:18px; margin-bottom: 20px;">
+
+          <!-- 
+                <div style="text-align: left; font-size: 1em; padding: 0 1em;">
+                    <p><strong>August 19, 2025 Recent News: </strong></p>
+                    <p> Thanks to strong community support, <strong>we are extending the submission deadline to September 1, 2025</strong>. We are looking forward to reading your work! </p>
+                </div> -->
+          <h2><a name="overview"></a>Overview</h2>
+          <hr>
+          <p>
+            Health is inherently temporal. Biosignals, wearable streams, bedside monitors, longitudinal electronic
+            health records (EHR), clinical notes, and imaging all evolve along a patient’s timeline. Learning from such
+            data is challenging: sequences are often irregular, non-stationary, sparsely labeled, highly personalized,
+            and temporally misaligned. These challenges intensify when integrating multiple modalities, where evidence
+            must be aligned and fused across a shared timeline rather than analyzed in isolation.
+          </p>
+          <img src="img/ts4h.png" alt="Banner illustrating various types of health time-series data"
+            style="display: block; margin-left: auto; margin-right: auto; width: 65%; border-radius: 8px; margin-bottom: 15px;margin-top: 15px;">
+          <p>
+            The Learning from Time Series for Health (TS4H) workshop provides a dedicated forum for advancing temporal
+            modeling in
+            healthcare spanning foundational methods and multimodal integration to clinical deployment. Given
+            the diversity and operational
+            constraints of health data, we welcome contributions spanning both methodological innovation and practical
+            translation. To bridge research and practice, TS4H also features a Demo Track showcasing interactive
+            systems, visualization tools, and open-source implementations that demonstrate how temporal models can
+            operate in real-world healthcare environments.
+          </p>
+
+          <hr>
+          <div style="text-align: center; font-size: 1em; padding: 1em;">
+            <p>We invite you to submit your work on TS4H by <strong>January
+                30, 2026</strong> (AOE).</p>
+            <!-- <p>To recognize an outstanding contribution, we are pleased to offer a <strong>$500 Best Paper
+                Prize</strong>🏆 sponsored independently by <strong>Google and Apple</strong></p> -->
+            <a href="call_for_papers.html" class="btn btn-primary" style="margin-top: 10px;">View Call for Papers</a>
+
+          </div>
+        </section>
+
+        <section id="speakers">
+          <h2><a name="speakers"></a>Speakers</h2>
+          <hr>
+          <div class="row profile-row">
+            <div class="col-sm-6 col-md-4">
+              <div class="profile-card">
+                <a href="hhttps://www.cl.cam.ac.uk/~cm542/">
+                  <img src="img/cecilia.jpeg" class="profile-image">
+                  <div class="profile-name">Cecilia Mascolo, PhD</div>
+                  <div class="profile-affiliation">Professor of Mobile Systems and Computer Science, University of
+                    Cambridge</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="profile-card">
+                <a href="https://sites.google.com/view/yanliu-ai/home">
+                  <img src="img/yan_liu.jpg" class="profile-image">
+                  <div class="profile-name">Yan Liu, PhD</div>
+                  <div class="profile-affiliation">Professor and Director of Machine Learning Center, University of
+                    Southern California (USC)</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="profile-card">
+                <a href="https://hsd1503.github.io/">
+                  <img src="img/shenda.jpg" class="profile-image">
+                  <div class="profile-name">Shenda Hong, PhD</div>
+                  <div class="profile-affiliation">Assitant Professor, Peking University</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="profile-card">
+                <a href="https://www.linkedin.com/in/daniel-mcduff-19968051/">
+                  <img src="img/mcduff.jpg" class="profile-image">
+                  <div class="profile-name">Daniel McDuff, PhD</div>
+                  <div class="profile-affiliation"> Staff Research Scientist, Google
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="profile-card">
+                <a href="https://homepages.dcc.ufmg.br/~glpappa/indexEn.html">
+                  <img src="img/gisele.jpg" class="profile-image">
+                  <div class="profile-name">Gisele Lobo Pappa, PhD</div>
+                  <div class="profile-affiliation">Associate Professor at Federal University of Minas Gerais (UFMG)
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="profile-card">
+                <a href="https://www.cs.toronto.edu/~rahulgk/">
+                  <img src="img/rahul.jpg" class="profile-image">
+                  <div class="profile-name">Rahul Krishnan, PhD</div>
+                  <div class="profile-affiliation">Assitant Professor at The University of Toronto, CIFAR AI Chair at
+                    Vector Institute</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="organizers">
+          <h2><a name="organizers"></a>Organizers</h2>
+          <hr>
+          <h3 class="committee-title">Primary Committee</h3>
+          <div class="row profile-row">
+            <div class="col-sm-6 col-md-3">
+              <div class="profile-card"><a href="https://maxxu05.github.io/"><img src="img/max.jpg"
+                    class="profile-image">
+                  <div class="profile-name">Maxwell Xu</div>
+                  <div class="profile-affiliation">UIUC, PhD Student</div>
+                </a></div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="profile-card"><a href="http://www.cs.toronto.edu/~stonekaboni/"><img src="img/sana.png"
+                    class="profile-image">
+                  <div class="profile-name">Sana Tonekaboni, PhD</div>
+                  <div class="profile-affiliation">MIT-Harvard Broad Institute, Postdoc</div>
+                </a></div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="profile-card"><a href="https://sites.google.com/view/diegofsilva/home"><img
+                    src="img/diego.jpg" class="profile-image">
+                  <div class="profile-name">Diego Furtado Silva, PhD</div>
+                  <div class="profile-affiliation">University of Sao Paolo, Associate Professor</div>
+                </a></div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="profile-card"><a href="https://arvindpillai.io/"><img src="img/arvind.jpg"
+                    class="profile-image">
+                  <div class="profile-name">Arvind Pillai</div>
+                  <div class="profile-affiliation">Dartmouth, PhD Student</div>
+                </a></div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="profile-card"><a href="https://sites.google.com/view/hyewon-jeong/"><img src="img/hyewon.jpeg"
+                    class="profile-image">
+                  <div class="profile-name">Hyewon Jeong, MD</div>
+                  <div class="profile-affiliation">MIT, PhD Student</div>
+                </a></div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="profile-card"><a href="https://wantingmao01.github.io/"><img src="img/wanting.jpeg"
+                    class="profile-image">
+                  <div class="profile-name">Wanting Mao</div>
+                  <div class="profile-affiliation">UIUC, PhD Student</div>
+                </a></div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="profile-card">
+                <a href="https://lab.research.sickkids.ca/goldenberg/">
+                  <img src="img/anna.png" class="profile-image">
+                  <div class="profile-name">Anna Goldenberg, PhD</div>
+                  <div class="profile-affiliation">Professor at UToronto, Chair of AI at SickKids Institute</div>
+                </a>
+              </div>
+            </div>
+            <h3 class="committee-title">Advisory Committee</h3>
+            <div class="row profile-row">
+              <div class="col-sm-6 col-md-3">
+                <div class="profile-card"><a href="https://rehg.org/"><img src="img/james.jpg" class="profile-image">
+                    <div class="profile-name">James M. Rehg, PhD</div>
+                    <div class="profile-affiliation">UIUC, Founder Professor</div>
+                  </a></div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="profile-card"><a href="https://sujaynagaraj.github.io/"><img src="img/sujay.jpeg"
+                      class="profile-image">
+                    <div class="profile-name">Sujay Nagaraj</div>
+                    <div class="profile-affiliation">U Toronto, MD/PhD Student</div>
+                  </a></div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="profile-card"><a href="https://www.tomhartvigsen.com/"><img src="img/tom.jpeg"
+                      class="profile-image">
+                    <div class="profile-name">Tom Hartvigsen, PhD</div>
+                    <div class="profile-affiliation">U Virginia, Assistant Professor</div>
+                  </a></div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="profile-card"><a href="https://xliucs.github.io/"><img src="img/xin.jpeg"
+                      class="profile-image">
+                    <div class="profile-name">Xin Liu, PhD</div>
+                    <div class="profile-affiliation">Google, Research Scientist</div>
+                  </a></div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="profile-card"><a href="https://dispathis.com/"><img src="img/dimitris.jpg"
+                      class="profile-image">
+                    <div class="profile-name">Dimitris Spathis, PhD</div>
+                    <div class="profile-affiliation">Google, Research Scientist</div>
+                  </a></div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="profile-card"><a href="https://satyanshukla.github.io/"><img src="img/satya.jpg"
+                      class="profile-image">
+                    <div class="profile-name">Satya Shukla, PhD</div>
+                    <div class="profile-affiliation">Meta, Research Scientist</div>
+                  </a></div>
+              </div>
+        </section>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
+
+</html>
