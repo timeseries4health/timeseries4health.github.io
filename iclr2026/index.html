@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script>
+if (window.location.pathname.endsWith("index.html/")) {
+  window.location.replace(window.location.pathname.replace(/\/+$/, ""));
+}
+</script>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
