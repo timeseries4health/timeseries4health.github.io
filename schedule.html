@@ -43,6 +43,14 @@
     .nav a.active {
       text-decoration: underline;
     }
+    .table > tbody > tr.info > td,
+    .table > tbody > tr.warning > td,
+    .table > tbody > tr.success > td {
+      font-weight: 600;
+    }
+    .iframe { 
+      max-width: 100%;
+    }
   </style>
 <div class="jumbotron jumbotron-fluid back" style="padding-bottom: 100px;">
   <div class="row header p-6 m-5">
@@ -118,77 +126,122 @@
       <div class="row" style="font-size:16px">
         <h2><a name="schedule"></a>Schedule</h2>
         <hr>
-        <p><strong>2025 Workshop Agenda [Not Finalized]</strong></p>
-        <p>Location: San Diego, CA</p>
-        <p> Sunday, December 7, 2025 at 8 a.m. PST.</p>
+        <p><strong>2025 Workshop Agenda (Subject to Change)</strong></p>
+        <p><strong>Date:</strong> Sunday, December 7, 2025</p>
+        <p><strong>Location:</strong> Upper Level Room 28A-E, San Diego Convention Center (San Diego, CA)</p>
         <hr>
-        <!-- <table class="table" border="2" cellpadding="2" cellspacing="2">
-          <tbody>
-            <tr>
-                <td>09:00 - 09:15</td>
-                <td>Opening remarks from the organizers</td>
-            </tr>
-            <tr>
-                <td>09:15 - 09:45</td>
-                <td><strong>Invited Talk 1: Shwetak Patel</strong>, Professor at University of Washington, Senior Director of Google Health<br>
-                    <em>Wearables and Mobile Health (Fitbit), Sensor Hardware</em></td>
-            </tr>
-            <tr>
-                <td>09:45 - 10:15</td>
-                <td><strong>Invited Talk 2: Anna Goldenberg</strong>, Professor at University of Toronto, Researcher at SickKids Institute<br>
-                    <em>Biomedical Informatics, Genomics</em></td>
-            </tr>
-            <tr>
-                <td>10:15 - 11:15</td>
-                <td>Coffee break and poster session 1 <em>(discussion time)</em></td>
-            </tr>
-            <tr>
-                <td>11:15 - 11:45</td>
-                <td><strong>Invited Talk 3: Jaya Narain</strong>, Research Scientist at Apple<br>
-                    <em>Wearables and Mobile Health (Apple Watch), Atypical Speech</em></td>
-            </tr>
-            <tr>
-                <td>11:45 - 12:15</td>
-                <td><strong>Invited Talk 4: Matthew McDermott</strong>, Assistant Professor at Columbia University<br>
-                    <em>Biomedical Informatics, Electronic Health Records</em></td>
-            </tr>
-            <tr>
-                <td>12:15 - 13:00</td>
-                <td>Networking/Mentorship Lunch <em>(discussion time)</em></td>
-            </tr>
-            <tr>
-                <td>13:00 - 14:00</td>
-                <td>Thematic Spotlight Oral Presentations</td>
-            </tr>
-            <tr>
-                <td>14:00 - 15:00</td>
-                <td>Coffee break and poster session 2 <em>(discussion time)</em></td>
-            </tr>
-            <tr>
-                <td>15:00 - 15:30</td>
-                <td><strong>Invited Talk 5: Emily Fox</strong>, Professor at Stanford University, SVP of AI at inistro<br>
-                    <em>Causal Modeling, Neuroscience, Genomics</em></td>
-            </tr>
-            <tr>
-                <td>15:30 - 16:00</td>
-                <td><strong>Invited Talk 6: Edward Choi</strong>, Associate Professor at Korea Advanced Institute of Science & Technology<br>
-                    <em>Biomedical Informatics, Interpretability</em></td>
-            </tr>
-            <tr>
-                <td>16:00 - 16:15</td>
-                <td>Coffee break <em>(discussion time)</em></td>
-            </tr>
-            <tr>
-                <td>16:15 - 17:00</td>
-                <td>Interactive panel with Invited Speakers <em>(all attendees; discussion time)</em></td>
-            </tr>
-            <tr>
-                <td>17:00</td>
-                <td>Closing remarks from organizers</td>
-            </tr>
-        </tbody>
-        </table> -->
-      </div>
+                  <table class="table table-striped table-bordered" style="font-size:15px;">
+            <thead>
+              <tr>
+                <th style="width:25%;">Time</th>
+                <th style="width:15%;">Duration</th>
+                <th>Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="success">
+                <td>8:30 - 8:40 AM</td>
+                <td>10 mins</td>
+                <td>Opening Remarks</td>
+              </tr>
+              <tr>
+                <td>8:40 - 9:15 AM</td>
+                <td>35 mins</td>
+                <td>Talk 1</td>
+              </tr>
+              <tr>
+                <td>9:15 - 9:50 AM</td>
+                <td>35 mins</td>
+                <td>Talk 2</td>
+              </tr>
+              <tr class="info">
+                <td>9:50 - 10:50 AM</td>
+                <td>60 mins</td>
+                <td><strong>Coffee Break / Poster Session 1</strong></td>
+              </tr>
+              <tr>
+                <td>10:50 - 11:25 AM</td>
+                <td>35 mins</td>
+                <td>Talk 3</td>
+              </tr>
+              <tr>
+                <td>11:25 - 12:00 PM</td>
+                <td>35 mins</td>
+                <td>Talk 4</td>
+              </tr>
+              <tr>
+                <td>12:00 - 12:35 PM</td>
+                <td>35 mins</td>
+                <td>Talk 5</td>
+              </tr>
+              <tr class="warning">
+                <td>12:25 - 1:30 PM</td>
+                <td>60 mins</td>
+                <td><strong>Lunch Break</strong></td>
+              </tr>
+              <tr class="info">
+                <td>1:30 - 2:30 PM</td>
+                <td>60 mins</td>
+                <td><strong>Coffee Break / Poster Session 2</strong></td>
+              </tr>
+              <tr>
+                <td>2:05 - 2:40 PM</td>
+                <td>35 mins</td>
+                <td>Talk 6</td>
+              </tr>
+              <tr>
+                <td>2:40 - 3:15 PM</td>
+                <td>35 mins</td>
+                <td>Talk 7</td>
+              </tr>
+              <tr class="info">
+                <td>3:15 - 4:15 PM</td>
+                <td>60 mins</td>
+                <td><strong>Coffee Break / Poster Session 3</strong></td>
+              </tr>
+              <tr class="success">
+                <td>4:15 - 4:30 PM</td>
+                <td>15 mins</td>
+                <td><strong>Closing Remarks & Award Presentations</strong></td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
+       <div class="row" style="font-size:16px">
+          <h2><a name="posters"></a>Poster Sessions</h2>
+          <hr>
+          <p><strong>Poster Presentation Format</strong></p>
+          <ul>
+            <li>Poster Size: <strong>24 inches (width) × 36 inches (height)</strong> portrait layout.</li>
+            <li>Posters will be taped to the wall with <strong>provided command strips only</strong>. </li>
+            <li>Please bring your printed poster to the room at least <strong>10 minutes before your session begins</strong>.</li>
+            <li> <a href="https://neurips.cc/Conferences/2025/PosterInstructions">NeurIPS 2025 Poster Instructions</a></li>
+          </ul>
+
+          <p><strong>Poster Session Times:</strong></p>
+          <ul>
+            <li>Poster Session 1: 9:50 – 10:50 AM</li>
+            <li>Poster Session 2: 1:30 – 2:30 PM</li>
+            <li>Poster Session 3: 3:15 – 4:15 PM</li>
+          </ul>
+
+          <hr>
+          <p><strong>Poster Assignment Table</strong>:</p>
+
+          <!-- EMBEDDED GOOGLE SHEET -->
+          <div style="overflow-x:auto; border:1px solid #ddd; border-radius:6px; margin-bottom:1em;">
+            <iframe 
+              src="https://docs.google.com/spreadsheets/d/1yS6ICEDuaFGo2DSxRET-nu0nej-uZ_5sjo7nn0YuMQ0/edit?usp=sharing"
+              width="100%"
+              height="600px"
+              style="border:0;">
+            </iframe>
+          </div>
+
+          <p><a href="https://docs.google.com/spreadsheets/d/1yS6ICEDuaFGo2DSxRET-nu0nej-uZ_5sjo7nn0YuMQ0/edit?usp=sharing" target="_blank">
+          🔗 Open Poster Assignment Sheet in a New Tab
+          </a></p>
+       </div>
     </div>
   </div>
 
