@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+<script>
+(function () {
+  var path = window.location.pathname;
+  var hasHtmlSlash = /\.html\/+$/.test(path);
+
+  if (hasHtmlSlash) {
+
+    var fixedPath = path.replace(/\/+$/, '');
+    var url = fixedPath + window.location.search + window.location.hash;
+
+    window.location.replace(url);
+    return;
+  }
+
+})();
+</script>
+
+<noscript>
+  <p>Page not found. If you were trying to open a .html URL with a trailing slash,
+  please remove the trailing “/”.</p>
+</noscript>
