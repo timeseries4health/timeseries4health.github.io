@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="NeurIPS Workshop.">
+ <meta name="author" content="Satya Narayan Shukla">
+ <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+ <title>Schedule | Learning from Time Series for Health</title>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+ <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/main.css">
+
+ </head>
+<body>
+  <style>
+  .back {
+   background:
+    linear-gradient(
+     rgba(30, 100, 160, 0.90),
+     rgba(0, 0, 0, 0.01)
+    ),
+    url("img/sandiego.jpg") no-repeat center;
+   background-size: cover;
+  }
+  .back h2 {
+   font-family: "Lato", sans-serif;
+   font-weight: 500;
+   font-size: 3rem;
+  }
+  .helper {
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+  }
+  .nav .btn {
+   font-size: 30px;
+   color: white;
+  }
+  /* Style for the active navigation link */
+  .nav a.active {
+   text-decoration: underline;
+  }
+  /* REMOVED BOOTSTRAP COLOR CLASSES TO AVOID CONFLICTS, BUT KEEPING THIS BLOCK IN CASE BOOTSTRAP IS INCLUDED */
+  /* .table > tbody > tr.info > td,
+  .table > tbody > tr.warning > td,
+  .table > tbody > tr.success > td {
+   font-weight: 600;
+  } */
+  .iframe {
+   max-width: 100%;
+  }
+
+    /* Custom styles for the improved schedule table */
+    .schedule-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+        border: 1px solid #ddd;
+    }
+    .schedule-table th, .schedule-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    .schedule-table thead tr {
+        background-color: #f7f7f7;
+    }
+    .schedule-table .opening-closing-row {
+/*        background-color: #e6ffe6; /* Light green for opening/closing */
+/*        font-weight: bold;*/*/
+    }
+    .schedule-table .speaker-row {
+        background-color: #f0f8ff; /* Light green for opening/closing */
+/*        font-weight: bold;*/
+    }
+    .schedule-table .break-row-coffee {
+        background-color: #f9f9f9; /* Light blue for coffee/posters */ 
+/*        font-weight: bold;*/
+    }
+    .schedule-table .break-row-lunch {
+/*        background-color: #fffacd; /* Light yellow for lunch */
+/*        font-weight: bold;*/*/
+    }
+    .speaker-name a {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .talk-title {
+        margin: 0;
+        font-weight: bold;
+    }
+    .talk-abstract {
+        margin: 5px 0 0 15px;
+        font-size: 14px;
+        color: #555;
+    }
+ </style>
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 100px;">
+ <div class="row header p-6 m-5">
+  <div class="p-1 mx-auto text-center text-white col-md-20 col-sm-12">
+   <h1 style="color:white;">
+    Learning from Time Series for Health
+   </h1>
+   <h2 style="color:white;">
+     NeurIPS 2025 Workshop | December 7 | Room 28 A-E
+   </h2>
+   <h3 style="color:white;">
+    Contact: ts4h.chairs@gmail.com
+   </h3>
+   <br>
+    <div class="nav">
+      <a href="index.html" class="btn">Home</a>
+      <a href="call_for_papers.html" class="btn">Call for Papers</a>
+      <a href="schedule.html" class="btn active">Schedule</a>
+      <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+     
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+     
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+     
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+     
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      </style>
+      <div class="dropdown" style="display:inline-block;">
+        <a href="#" class="btn">Prior Years</a>
+        <div class="dropdown-content">
+          <a href="../iclr2024/index.html">ICLR 2024</a>
+          <a href="../neurips2022/index.html">NeurIPS 2022</a>
+        </div>
+      </div>
+      <!-- <div class="dropdown" style="display:inline-block;">
+        <a href="#" class="btn">Coming Soon</a>
+        <div class="dropdown-content">
+          <a href="iclr2026/index.html">ICLR 2026</a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+ </div>
+</div>
+
+<div class="container">
+ <div class="row" style="padding:20px">
+  <div class="hidden-xs col-sm-3 col-md-2" id="sidebar" role="navigation" style="margin-top:10px">
+   </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-9">
+   <div class="row" style="font-size:16px">
+        
+        <h2><a name="schedule"></a>Workshop Schedule</h2>
+    <hr>
+        
+        <div style="margin-bottom: 20px;">
+            <h3 style="margin-top: 0;">2025 Workshop Agenda</h3>
+            <p><strong>Date:</strong> Sunday, December 7, 2025</p>
+            <p><strong>Location:</strong> Upper Level Room 28A-E, San Diego Convention Center (San Diego, CA)</p>
+        </div>
+    <hr>
+        
+        <table class="schedule-table">
+      <thead>
+       <tr>
+        <th style="width:20%;">Time</th>
+        <th style="width:15%;">Duration</th>
+        <th>Event</th>
+       </tr>
+      </thead>
+      <tbody>
+              <tr class="opening-closing-row">
+        <td>8:30 - 8:40 AM</td>
+        <td>10 mins</td>
+        <td>Opening Remarks</td>
+       </tr>
+       
+              <tr class="speaker-row">
+        <td>8:40 - 9:15 AM</td>
+        <td>35 mins</td>
+        <td>
+                    <p class="speaker-name"><a href="https://mp2893.com/"><b>Edward Choi</b></a></p>
+         <p class="talk-title">Towards building a reasoning agent for electrocardiogram</p>
+         <p class="talk-abstract"><i>Abstract: Electrocardiograms (ECG) are one of the most often studied clinical signals by the AI community due to their frequent usage in hospitals as well as data availability on the web. In this talk, we introduce how we tried/try to contribute to this effort in three different dimensions, namely representation learning, question answering, and a reasoning agent, and share what we have learned along the way.</i></p>
+        </td>
+       </tr>
+       
+              <tr class="speaker-row">
+        <td>9:15 - 9:50 AM</td>
+        <td>35 mins</td>
+        <td><a href="https://goldenberglab.ca/"><b>Anna Goldenberg</b></a>
+        <p class="talk-title">Towards Foundation Models for Time Series in Healthcare</p>
+        <p class="talk-abstract"><i> Abstract: Time series data underpin nearly every aspect of modern healthcare, from continuous monitoring in the ICU to longitudinal signals from wearable sensors. Yet most machine learning models in this domain either assume shared dynamics across highly heterogeneous populations or are designed at the individual level, requiring sufficient personal data before meaningful predictions can be made. Our analyses across multiple ICU and wearable cohorts reveal substantial heterogeneity within and across subpopulations. This talk will argue that one way to address this heterogeneity while still pursuing the vision of foundation models for temporal health data, lies in learning dynamic subgroup-level embeddings: representations that can adapt across individuals, time scales, and data modalities. I will present our recent progress toward this goal, including a nonparametric Bayesian approach. These efforts aim to create a new wave of adaptive time series models capable of supporting individualized healthcare on time and at scale.
+        </i></p>
+        </td>
+       </tr>
+       
+              <tr class="break-row-coffee">
+        <td>9:50 - 10:50 AM</td>
+        <td>60 mins</td>
+        <td><strong>Poster Session 1 / Coffee Break</strong></td>
+       </tr>
+       
+              <tr class="speaker-row">
+        <td>10:50 - 11:25 AM</td>
+        <td>35 mins</td>
+        <td>
+                    <p class="speaker-name"><a href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ&hl=en"><b>Daniel McDuff</b></a></p>
+         <p class="talk-title">Foundation Models & Agentic AI that Supports Healthy Living</p>
+         <p class="talk-abstract"><i> Abstract: A new era of wearable foundation models that capture rich information about behavior and physiology present the opportunity to discover novel biomarkers of disease and forecast health states into the future. These models, combined with Personal Health Agents, built using agentic AI, will provide new opportunities for people to interface with these data, learn about them in a personalized way, and make healthy choices. In this talk I will present several of our latest projects that bridge these topics. </i></p>
+                 </td>
+
+       </tr>
+       
+              <tr class="speaker-row">
+        <td>11:25 - 12:00 PM</td>
+        <td>35 mins</td>
+        <td><a href="https://emilybfox.su.domains/"><b>Emily B. Fox</b></a>
+        <p class="talk-title">Improving Diabetes Outcomes with Wearable-Driven, AI-Guided Clinical Care</p>
+                <p class="talk-abstract"><i> Abstract: Improving diabetes outcomes at scale requires moving beyond quarterly clinic visits to AI-guided, continuous care grounded in wearable data and robust causal reasoning. Yet when training black-box models on observational data, high predictive accuracy can coexist with low causal validity—the counterfactual simulation of a glucose trajectory may respond nonsensically to a simulated insulin intervention. We address this by encoding domain knowledge about treatment-effect rankings into a causal loss that, combined with standard predictive loss, biases learning toward physiologically plausible models. I’ll then turn to detecting and localizing treatment effects in high-dimensional outcome spaces, such as week-long CGM traces. Finally, I’ll describe a pipeline for learning explainable treatment policies for remote patient monitoring, where clinician-informed state and action representations yield targeting policies that are more effective and more interpretable than black-box alternatives. Together, these pieces show how causally grounded modeling, high-dimensional treatment-effect inference, and interpretable policy learning can work in concert to support trustworthy AI-guided clinical care. </i></p>
+        </td>
+       </tr>
+       
+              <tr class="speaker-row">
+        <td>12:00 - 12:35 PM</td>
+        <td>35 mins</td>
+        <td><a href="https://www.dbmi.columbia.edu/profile/matthew-mcdermott/"><b>Mathew McDermott</b></a>
+        <p class="talk-title">Foundation Models for Structured Electronic Health Record Data</p>
+                <p class="talk-abstract"><i> Abstract: In the past two years, we've seen the emergence of zero-shot capable foundation models for EHR data, including models like ETHOS, CEHR-GPT, and COMET. In this talk, I'll discuss this advancement, including the key innovations that led to these models (and some of the great ideas that didn't), the major problems and questions they face, their potential clinical utility, and where the field may go next. </i></p>
+        </td>
+       </tr>
+       
+              <tr class="break-row-lunch">
+        <td>12:35 - 1:35 PM</td>
+        <td>60 mins</td>
+        <td>Lunch Break</td>
+       </tr>
+       
+              <tr class="break-row-coffee">
+        <td>1:35 - 2:35 PM</td>
+        <td>60 mins</td>
+        <td><strong>Poster Session 2 / Coffee Break</strong></td>
+       </tr>
+       
+              <tr class="speaker-row">
+        <td>2:35 - 3:10 PM</td>
+        <td>35 mins</td>
+        <td>
+                    <p class="speaker-name"><a href="https://www.linkedin.com/in/jaya-narain-5b6b0963/"><b>Jaya Narain</b></a>
+         <p class="talk-title">Data Efficient and Domain-Driven Representations with Sensors and Speech</p>
+         <p><b>[In-Person Only]</b></p>
+                 <p class="talk-abstract"><i> Abstract: Learning robust embedding can help create reliable models in challenging data-scarce situations.  Methods that allow utilizing embedding from pre-trained models across tasks and modalities can be particularly impactful in time series domains, where labeled data is often limited.  In this talk, I present several recent projects towards training and characterizing the use of foundation models for time series signals — including selecting signal-rich labels to use embeddings from public models for speech characterizations and related fairness considerations for atypical speech, sharing embeddings across speech and wearable sensor signals, and leveraging contextual knowledge from LLMs for multi-modal fusion. </i></p>
+         </td>
+        </td>
+       </tr>
+       
+              <tr class="speaker-row">
+        <td>3:10 - 3:45 PM</td>
+        <td>35 mins</td>
+        <td><a href="https://ouraring.com/blog/reviewed-by/xi-zhang-phd-vp-health-sensing/?srsltid=AfmBOorsUJGS3rGwKG_K1DZ0IhtV9WmScFTSJzGGxKdPZnnIz1ZtB5ot"><b>Xi Zhang</b></a>
+        <p class="talk-title">Symptom Radar: Exploring the Transition from Reactive Detection to Proactive Prediction</p>
+        <p><b>[In-Person Only]</b></p>
+                <p class="talk-abstract"><i> Abstract: Modern healthcare faces a critical limitation: it typically intervenes only after symptoms manifest. Wearable technology has begun to bridge this gap by enabling continuous, longitudinal monitoring, providing users with unprecedented visibility into their daily physiology. Yet, the vast potential of this data remains largely untapped: the opportunity to shift from high-resolution observation to proactive prediction. In this talk, we share the development journey of Oura’s "Symptom Radar," a feature explicitly engineered to test the limits of shifting this paradigm from reactive detection to proactive prediction.<br>
+
+We invite the audience to explore our central hypothesis: that high-frequency physiological time series can outpace human perception, allowing detection algorithms to function as early warning systems. We discuss the unique machine learning challenges of validating this theory, particularly when training on "ground truth" labels (user tags) that are subjective and inherently delayed. We outline our high-level technical design, prioritizing rigorous data preparation and specific modeling principles to maximize predictive power and rigorously evaluate the system's effectiveness.<br>
+
+The discussion centers on our real-world findings. We present evidence that in certain percentage of detected cases, our models identify significant biometric shifts—led primarily by temperature trends—well before users report symptoms. We examine how increasing data scale linearly improves this "prediction gap," and discuss how these insights provide the necessary blueprint for future foundation models capable of transforming personal health monitoring from a retrospective report into a prospective forecast. </i></p>
+        </td>
+       </tr>
+       
+              <tr class="break-row-coffee">
+        <td>3:45 - 4:45 PM</td>
+        <td>60 mins</td>
+        <td><strong>Poster Session 3 / Coffee Break</strong></td>
+       </tr>
+       
+              <tr class="opening-closing-row">
+        <td>4:45 - 5:00 PM</td>
+        <td>15 mins</td>
+        <td>Closing Remarks & Award Presentations</td>
+       </tr>
+      </tbody>
+     </table>
+   </div>
+   <div class="row" style="font-size:16px">
+     <h2><a name="posters"></a>Poster Sessions</h2>
+
+     <hr>
+     <p><strong>Poster Assignment Table</strong>:</p>
+
+          <div style="overflow-x:auto; border:1px solid #ddd; border-radius:6px; margin-bottom:1em;">
+      <iframe
+       src="https://docs.google.com/spreadsheets/d/1yS6ICEDuaFGo2DSxRET-nu0nej-uZ_5sjo7nn0YuMQ0/edit?usp=sharing"
+       width="100%"
+       height="1000px"
+       style="border:0;">
+      </iframe>
+     </div>
+
+     <p><a href="https://docs.google.com/spreadsheets/d/1yS6ICEDuaFGo2DSxRET-nu0nej-uZ_5sjo7nn0YuMQ0/edit?usp=sharing" target="_blank">
+     🔗 Open Poster Assignment Sheet in a New Tab
+     </a></p>
+
+     <hr>
+     <p><strong>Poster Presentation Format</strong></p>
+     <ul>
+      <li>Poster Size: <strong>24 inches (width) × 36 inches (height)</strong> portrait layout.</li>
+      <li>Posters will be taped to the wall with <strong>provided command strips only</strong>. </li>
+      <li>Please bring your printed poster to the room at least <strong>10 minutes before your session begins</strong>.</li>
+      <li> <a href="https://neurips.cc/Conferences/2025/PosterInstructions">NeurIPS 2025 Poster Instructions</a></li>
+     </ul>
+
+     <p><strong>Poster Session Times:</strong></p>
+     <ul>
+      <li>Poster Session 1: 9:50 – 10:50 AM</li>
+      <li>Poster Session 2: 1:35 – 2:35 PM</li>
+      <li>Poster Session 3: 3:45 – 4:45 PM</li>
+     </ul>
+   </div>
+  </div>
+ </div>
+
+ <hr>
+
+ <footer>
+ &nbsp;
+ </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+  tex2jax: {
+   inlineMath: [ ['$','$'] ],
+   processEscapes: true
+  }
+ });
+</script>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
